@@ -10,7 +10,7 @@
         @foreach ($teams as $team)
         <tr>
             <td>{{ $team->name }}</td>
-            <td>{{ $team->abbreviation }}</td>
+            <td><img src="images/{{ $team->abbreviation }}.png">{{ $team->abbreviation }}</td>
             <td>{{ $team->group }}</td>
         </tr>
         @endforeach
